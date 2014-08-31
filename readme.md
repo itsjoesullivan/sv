@@ -22,3 +22,9 @@ go get github.com/itsjoesullivan/sv
 ```bash
 sv
 ```
+
+## To update
+
+```bash
+go get -u github.com/itsjoesullivan/sv
+```
