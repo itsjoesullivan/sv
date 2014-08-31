@@ -2,11 +2,16 @@ package main
 
 import (
   "fmt"
+  "io/ioutil"
   "net/http"
 )
 
 func viewHandler(w http.ResponseWriter, r *http.Request) {
-  fmt.Fprintf(w, "hello, world")
+  filename := r.URL.Path[1:]
+  body, err := ioutil.ReadFile(filename)
+  if err != nil {
+  }
+  fmt.Fprintf(w, string(body[:]))
 }
 
 func main() {
