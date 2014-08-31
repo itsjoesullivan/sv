@@ -16,3 +16,9 @@ PATH=$PATH:$GOPATH/bin
 ```bash
 go get github.com/itsjoesullivan/sv
 ```
+
+## Use it
+
+```bash
+sv
+```
